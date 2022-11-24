@@ -20,7 +20,7 @@ const Assemble_Proj = () => {
         </div>
         <div id="text" className="md:p-3 md:w-6/12 w-full">
           <p className=" text-center md:text-left md: text-rightmd:m-4 m-2 text-2xl text-red-600 font-bold italic underline">
-          Assemble Hackathon SF "The Most Polished Project" Award Winner:
+          Assemble Hackathon SF &ldquo;The Most Polished Project&ldquo; Award Winner:
           </p>
           <p className="  hidden md:block md:m-4 m-2 text-xl text-red-600 font-bold">
           Sound Waves and Music: a Visual Explanation 
@@ -28,7 +28,7 @@ const Assemble_Proj = () => {
           <p className="text-center	md:text-left md:m-4 m-0 mt-5 text-sm md:text-md text-black">
             Mathematical Animations programmed using Python for the graphical
             visualization of sound waves and various signals and explanatory
-            voiceover. Won "The Most Polished Project" at Assemble by hack club in
+            voiceover. Won &ldquo;The Most Polished Project&ldquo; at Assemble by hack club in
             SF, a global Hackathon that allocated 40k in travel stipends to bring
             in over 150+ kids from around the world.
           </p>
