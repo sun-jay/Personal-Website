@@ -22,6 +22,7 @@ const hero = () => {
                 going into Comp Sci. I enjoy playing the piano, coding, lifting,
                 gaming, competing at hackathons, basketball, music production,
                 and many other hobbies.
+                TEST
               </p>
             </div>
           </div>
