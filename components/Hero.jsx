@@ -1,5 +1,5 @@
 import React from "react";
-import Socials from ".//Socials"
+import Socials from "./Socials"
 // import Link from "next/link";
 import { FaArrowCircleDown } from "react-icons/fa";
 
