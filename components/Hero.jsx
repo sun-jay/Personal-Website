@@ -28,7 +28,7 @@ const hero = () => {
           </div>
 
           <div class="w-full md:w-8/12 m-4 ">
-            <p className="md:text-5xl text-4xl text-center text-white">Sunny-Jay.com</p>
+            <p className="linear-wipe md:text-5xl text-4xl text-center text-white">Sunny-Jay.com</p>
             <div className="m-4">
               <p className="text-2xl text-center text-white	">
                 Hi, I&#39;m Sunny Jayaram. I&#39;m a student at California High School
