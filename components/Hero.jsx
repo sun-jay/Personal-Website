@@ -11,11 +11,11 @@ const hero = () => {
   return (
 
 
-    <div className="grid place-items-center h-screen w-screen">
+    <div className="flex flex-row items-end  justify-center h-screen w-full">
 
-      <div className="absolute top-0 left-0 right-0 bottom-0 h-screen w-screen bg-fixed bg-center bg-cover custom-img"></div>
+      <div className="absolute top-0 left-0 right-0 bottom-0 h-screen w-full bg-fixed bg-center bg-cover custom-img"></div>
 
-      <div className="md:mt-0 mt-4 absolute top-0 left-0 right-0 bottom-0 grid place-items-center h-screen w-screen">
+      <div className="md:mt-0 mt-4 absolute top-0 left-0 right-0 bottom-0 grid place-items-center h-screen w-full ">
         <div className="items-center m-auto flex flex-col md:flex-row w-9/12  ">
 
           <div className="flex-col items-center w-9/12 md:w-4/12 ">
@@ -42,8 +42,8 @@ const hero = () => {
         </div>
       </div>
 
-      <FaArrowCircleDown className=" md:block hidden animate-[bounce_2s_ease-in-out_infinite] absolute top-[85%] left-[48%] text-white/70 cursor-pointer select-none z-[2] transition-transform hover:scale-125"
-        size={70}
+      <FaArrowCircleDown className="pb-16 md:block hidden animate-[bounce_2s_ease-in-out_infinite]  text-white/70 cursor-pointer select-none z-[2] transition-transform hover:scale-125"
+        size={140}
         opacity={0.5}/>
     </div>
   );

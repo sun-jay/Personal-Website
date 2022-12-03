@@ -4,7 +4,7 @@ import { SocialIcon } from 'react-social-icons';
 
 const Socials = () => {
   return (
-    <div className='m-2 flex justify-evenly '>
+    <div className=' flex justify-evenly '>
           
         <div className='p-1'>
           <SocialIcon  bgColor = "#FF0000" fgColor = "#FFFFFF" url="https://www.youtube.com/channel/UC2kIgU1hMcvb2DT9CNa5a3g" />

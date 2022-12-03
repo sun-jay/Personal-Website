@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <div className='overflow-hidden'>
+    <div className='	sb_center'>
       <Navbar />
       <Component {...pageProps} />
     </div>
