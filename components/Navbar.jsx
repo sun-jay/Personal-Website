@@ -27,9 +27,9 @@ const Navbar = () => {
 
   return (
     <div style={{ backgroundColor: `${color}` }} className="fixed left-0 top-0 w-full z-20 ease-in duration-300">
-      <div className="max-w-[1300px] m-auto flex justify-between items-center p-4 text-white">
-        <Link href="/">
-          <h1 style={{ color: `${textColor}` }} className="md:visible invisible  text-4xl">Sunny-Jay.com</h1>
+      <div className="max-w-[1300px] m-auto flex md:justify-between justify-between items-center p-4 text-white">
+        <Link className = "md:block hidden " href="/">
+          <h1 style={{ color: `${textColor}` }} className="text-4xl">Sunny-Jay.com</h1>
         </Link>
         <ul style={{ color: `${textColor}` }} className="hidden md:flex">
           <li className={cur === "Home"? "p-4 font-bold	": "p-4"}>
@@ -45,6 +45,7 @@ const Navbar = () => {
             <Link href="/contact">Contact</Link>
           </li> */}
         </ul>
+        <div className="block md:hidden">Sunny-Jay.com</div>
         <div onClick={handleNav} className='block md:hidden z-10'>
           {nav ? (
             <AiOutlineClose size={20} style={{ color: nav ? '#ffffff': `${textColor}`   } } />
