@@ -1,5 +1,5 @@
 import React from "react";
-import Socials from "./Socials"
+import Socials from "./socials"
 // import Link from "next/link";
 import { FaArrowCircleDown } from "react-icons/fa";
 
@@ -42,7 +42,7 @@ const hero = () => {
         </div>
       </div>
 
-      <FaArrowCircleDown className=" md:block hidden animate-[bounce_2s_ease-in-out_infinite] absolute top-[85%] right-[50%] text-white/70 cursor-pointer select-none z-[2] transition-transform hover:scale-125"
+      <FaArrowCircleDown className=" md:block hidden animate-[bounce_2s_ease-in-out_infinite] absolute top-[85%] left-[48%] text-white/70 cursor-pointer select-none z-[2] transition-transform hover:scale-125"
         size={70}
         opacity={0.5}/>
     </div>
