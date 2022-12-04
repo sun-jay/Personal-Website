@@ -13,7 +13,7 @@ const hero = () => {
 
     <div className="flex flex-row items-end  justify-center h-screen w-full">
 
-      <div className="absolute top-0 left-0 right-0 bottom-0 h-screen w-full bg-auto md:bg-cover bg-fixed bg-center custom-img"></div>
+      <div className="absolute top-0 left-0 right-0 bottom-0 h-screen w-full bg-auto md:bg-cover bg-fixed bg-center custom-img z -z-50"></div>
 
       <div className="md:mt-0 mt-8 absolute top-0 left-0 right-0 bottom-0 grid place-items-center h-screen w-full ">
         <div className="items-center m-auto flex flex-col md:flex-row w-9/12  ">
@@ -29,10 +29,10 @@ const hero = () => {
 
           </div>
 
-          <div class="w-full md:w-8/12 mt-1 m-4">
-            <p className="linear-wipe md:text-5xl text-4xl text-center z-10 text-white">Sunny-Jay.com</p>
-            <div className="md:m-4 ml-1 mr-1 mt-5 mb-4">
-              <p className="text-2xl text-center text-white	">
+          <div class="w-full md:w-8/12 mt-1 m-2">
+            <p className="linear-wipe  max-[350px]:text-3xl text-4xl  text-center z-10 text-white">Sunny-Jay.com</p>
+            <div className="md:m-4  mt-5 mb-4">
+              <p className="max-[350px]:text-sm text-xl text-center text-white	">
                 Hi, I&#39;m Sunny Jayaram. I&#39;m a student at California High School
                 going into Comp Sci. I enjoy playing the piano, coding, lifting,
                 gaming, competing at hackathons, basketball, music production,
