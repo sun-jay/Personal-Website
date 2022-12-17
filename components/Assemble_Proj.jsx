@@ -5,6 +5,11 @@ const Assemble_Proj = () => {
     <div id="proj" className="grid place-items-center w-screen bg-gray-100">
       <div id="cols" className="max-w-[1240px] p-6 md:w-10/12 w-full items-center m-auto flex flex-col md:flex-row  ">
         <div id="text" className="md:hidden md:p-3 md:w-6/12 w-full">
+          {/* <p className=" text-center md:text-left md:m-4 mb-4 text-md text-red-600 font-bold ">
+          This website was coded from scratch using Next.js, React.js, TailWind CSS, 
+                and Spline 3D, and serves as a record of my progress in frontend development, while also documenting my other projects
+                and achievements.
+          </p> */}
           <p className=" text-center	md:text-left md:m-4 mb-4 text-xl text-red-600 font-bold ">
           Sound Waves and Music: a Visual Explanation 
           </p>

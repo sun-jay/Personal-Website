@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 html{
   scroll-behavior: smooth;
   font-family: 'Raleway', sans-serif;
@@ -89,4 +91,30 @@ html{
 .sb_center{
   overflow-x: hidden;
   padding-left: calc(100vw - 100%);
+}
+
+.bg_thatblack{
+  background: #121212;
+}
+/* .fade-in{
+  opacity: 0;
+  transition: opacity 2s;
+  -webkit-transition: opacity 2s; 
+}  */
+
+
+.fade-in {
+  animation: fadeInAnimation 1s ease 2s 1 normal both;
+  /* animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; */
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
 }

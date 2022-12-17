@@ -1,52 +1,60 @@
 import React from "react";
-import Socials from "./socials"
-// import Link from "next/link";
+import Socials from "./socials";
+import Anim from "./Anim";
+import Anim2 from "./Anim2";
 import { FaArrowCircleDown } from "react-icons/fa";
-
-
-
-
+import Project from "./Project"
 
 const hero = () => {
   return (
-
-
-    <div className="flex flex-row items-end  justify-center h-screen w-full">
-
-      <div className="absolute top-0 left-0 right-0 bottom-0 h-screen w-full bg-auto md:bg-cover bg-fixed bg-center custom-img z -z-50"></div>
-
-      <div className="md:mt-0 mt-8 absolute top-0 left-0 right-0 bottom-0 grid place-items-center h-screen w-full ">
+    <div className="flex flex-row items-end  justify-center md:h-screen h-[140vh] w-full">
+      {/* <div className="absolute top-0 left-0 right-0 bottom-0 h-screen w-full bg-auto md:bg-cover bg-fixed bg-center custom-img z -z-50"></div> */}
+      <div className="bg_thatblack absolute top-0 left-0 right-0 bottom-0 h-screen w-full "></div>
+      <div className="absolute top-0 left-0 right-0 bottom-0 h-[150vh] md:h-screen w-full ">
+        <Anim2 />
+      </div>
+      <div className="fade-in md:mt-0 mt-8 absolute top-0 left-0 right-0 bottom-0 grid place-items-center md:h-screen h-[150vh]  w-full ">
         <div className="items-center m-auto flex flex-col md:flex-row w-9/12  ">
-
           <div className="flex-col items-center w-9/12 md:w-4/12 ">
             <img className=" z-10" src="IMG_8285 2-modified (1).png" />
             {/* <div className = "mt-2 p-1 lg:bg-black lg:rounded-full lg:bg-opacity-50 lg:m-4 lg:border-black"> */}
-            <div className = "mt-2 p-1 lg:bg-black lg:rounded-full lg:bg-opacity-50 lg:m-4 lg:border-black">
-            
+            <div className="mt-2 p-1 lg:bg-black lg:rounded-full lg:bg-opacity-50 lg:m-4 lg:border-black">
               <Socials />
             </div>
-
-
           </div>
 
-          <div class="w-full md:w-8/12 mt-1 m-2">
-            <p className="linear-wipe  max-[350px]:text-3xl text-4xl  text-center z-10 text-white">Sunny-Jay.com</p>
-            <div className="md:m-4  mt-5 mb-4">
+          <div class="w-full  bg-black bg-opacity-80 rounded-lg md:w-8/12 mt-1 md:ml-8 m-2">
+            <p className="linear-wipe m-2 max-[350px]:text-3xl text-4xl lg:text-6xl text-center z-10 text-white">
+              Sunny-Jay.com
+            </p>
+            <div className="md:m-4  m-1 mt-5 mb-4">
               <p className="max-[350px]:text-sm text-xl text-center text-white	">
-                Hi, I&#39;m Sunny Jayaram. I&#39;m a student at California High School
-                going into Comp Sci. I enjoy playing the piano, coding, lifting,
-                gaming, competing at hackathons, basketball, music production,
-                and many other hobbies.
+                Hi, I&#39;m Sunny Jayaram. I&#39;m a student at California High
+                School going into Comp Sci. I enjoy playing the piano, coding,
+                lifting, gaming, competing at hackathons, basketball, music
+                production, and many other hobbies. 
+                
               </p>
             </div>
-
+            <div className="md:m-4  m-1 mt-5 mb-4">
+              <p className="max-[350px]:text-sm text-xl text-center text-white	">
+              This website was coded from scratch using Next.js, React.js, TailWind CSS, 
+                and Spline 3D, and serves as a record of my progress in frontend development, while also documenting my other projects
+                and achievements.
+                
+              </p>
+            </div>
           </div>
         </div>
+        
       </div>
 
-      <FaArrowCircleDown className="pb-16 md:block hidden animate-[bounce_2s_ease-in-out_infinite]  text-white/70 cursor-pointer select-none z-[2] transition-transform hover:scale-125"
+      <FaArrowCircleDown
+        className="fade-in pb-16 md:block hidden animate-[bounce_2s_ease-in-out_infinite]  text-white/70 select-none z-[2]"
         size={140}
-        opacity={0.5}/>
+        opacity={0.5}
+      />
+      
     </div>
   );
 };
