@@ -14,7 +14,7 @@ const hero = () => {
         <Anim />
       </div>
 
-      <div className="items-center m-auto flex flex-col md:flex-row w-9/12  ">
+      <div className="fade-in items-center m-auto flex flex-col md:flex-row w-9/12  ">
           <div className="flex-col items-center w-9/12 md:w-4/12 ">
             <img className=" z-10" src="IMG_8285 2-modified (1).png" />
             {/* <div className = "mt-2 p-1 lg:bg-black lg:rounded-full lg:bg-opacity-50 lg:m-4 lg:border-black"> */}

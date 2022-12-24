@@ -103,12 +103,28 @@ html{
 }  */
 
 
-.fade-in {
-  animation: fadeInAnimation 1s ease 2s 1 normal both;
-  -webkit-animation: fadeInAnimation 1s ease 2s 1 normal both;
+.fade-in-d {
+  animation: fadeInAnimation 1s ease 1.5s 1 normal both;
+  -webkit-animation: fadeInAnimation 1s ease 1.5s 1 normal both;
   /* animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards; */
+}
+
+.fade-in-m {
+  animation: fadeInAnimation 1s ease 5s 1 normal both;
+  -webkit-animation: fadeInAnimation 1s ease 5s 1 normal both;
+  /* animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards; */
+}
+
+.full-o {
+  opacity: 1;
+}
+
+.bigh{
+  height: 120vh;
 }
 
 @keyframes fadeInAnimation {
