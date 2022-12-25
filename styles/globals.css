@@ -111,9 +111,22 @@ html{
   animation-fill-mode: forwards; */
 }
 
+@media (min-width: 768px) {
+  .fade-d {
+    animation: fadeInAnimation 1s ease 1.5s 1 normal both;
+    -webkit-animation: fadeInAnimation 1s ease 1.5s 1 normal both;
+  }
+}
+@media (max-width: 768px) {
+  .fade-m {
+    animation: fadeInAnimation 0.5s ease 3s 1 normal both;
+    -webkit-animation: fadeInAnimation 0.5s ease 3s 1 normal both;
+  }
+}
+
 .fade-in-m {
-  animation: fadeInAnimation 1s ease 5s 1 normal both;
-  -webkit-animation: fadeInAnimation 1s ease 5s 1 normal both;
+  animation: fadeInAnimation 1s ease 3s 1 normal both;
+  -webkit-animation: fadeInAnimation 1s ease 3s 1 normal both;
   /* animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards; */

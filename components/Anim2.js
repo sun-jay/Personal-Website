@@ -6,12 +6,14 @@ const Anim = () => {
 
     return (
           <Spline scene="
-          scene (1).splinecode
+          https://prod.spline.design/FzrnmKMIRRAuc4iZ/scene.splinecode
           " 
                     />
 
       );
 }
+// scene (1).splinecode
+
 // import React, { Suspense } from 'react';
 
 // const Spline = React.lazy(() => import('@splinetool/react-spline'));

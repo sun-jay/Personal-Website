@@ -24,15 +24,15 @@ const hero = () => {
         </div>
         
       </div>
-      <div className="hidden md:absolute md:block top-0 left-0 right-0 bottom-0 bigh md:h-screen w-full ">
+      {/* <div className="hidden md:absolute md:block top-0 left-0 right-0 bottom-0 bigh md:h-screen w-full ">
         <Anim/>
-      </div>
-      <div className="md:hidden absolute block top-0 left-0 right-0 bottom-0 bigh md:h-screen w-full ">
+      </div> */}
+      <div className="absolute  top-0 left-0 right-0 bottom-0 bigh md:h-screen w-full ">
         <Anim2/>
       </div>
       
 
-      <div  className="fade-in-d md:fade-in-m md:mt-0 mt-8 absolute top-0 left-0 right-0 bottom-0 grid place-items-center md:h-screen bigh  w-full ">
+      <div  className="fade-d fade-m md:mt-0 mt-8 absolute top-0 left-0 right-0 bottom-0 grid place-items-center md:h-screen bigh  w-full ">
         <div className="items-center m-auto flex flex-col md:flex-row w-9/12  ">
           <div className="flex-col items-center w-9/12 md:w-4/12 ">
             <img  className=" z-10" src="IMG_8285 2-modified (1).png" />
@@ -71,7 +71,7 @@ const hero = () => {
       
 
       <FaArrowCircleDown
-        className="fade-in-d md:fade-in-m fade-in pb-16 md:block hidden animate-[bounce_2s_ease-in-out_infinite]  text-white/70 select-none z-[2]"
+        className="fade-d fade-m  pb-16 md:block hidden animate-[bounce_2s_ease-in-out_infinite]  text-white/70 select-none z-[2]"
         size={140}
         opacity={0.5}
       />
