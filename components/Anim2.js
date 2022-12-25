@@ -6,7 +6,7 @@ const Anim = () => {
 
     return (
           <Spline scene="
-          https://prod.spline.design/FzrnmKMIRRAuc4iZ/scene.splinecode
+          scene (3).splinecode
           " 
                     />
 
