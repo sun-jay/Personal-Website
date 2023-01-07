@@ -6,12 +6,13 @@ import { SliderData } from "../components/SliderData";
 import Assemble_Proj from "../components/Assemble_Proj";
 import Project from "../components/Project";
 
+
+
 export default function Home() {
   return (
-    <div>
+    <div className="">
       <Hero />
       {/* <Slider slides = {SliderData} /> */}
-
       <Assemble_Proj />
       <Project
         name="Understanding e^ix = cos(x) + i*sin(x) in the context of infinite sums."

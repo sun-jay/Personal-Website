@@ -5,6 +5,7 @@ import Anim2 from "./Anim2";
 import { FaArrowCircleDown } from "react-icons/fa";
 import Project from "./Project"
 import { useState, useEffect } from 'react';
+import Zoom from 'react-reveal/Zoom'; // Importing Zoom effect
 
 
 
@@ -21,6 +22,8 @@ const hero = () => {
                   Sunny-Jay.com
           </p>
         LOADING...
+          
+
         </div>
         
       </div>
@@ -43,7 +46,7 @@ const hero = () => {
             </div>
           </div>
 
-          <div class="w-full  bg-black bg-opacity-80 rounded-lg md:w-8/12 mt-1 md:ml-8 m-2">
+          <div class="w-full bg-black bg-opacity-80 rounded-lg md:w-8/12 mt-1 md:ml-8 m-2">
             <p className="linear-wipe m-2 max-[350px]:text-3xl text-4xl lg:text-6xl text-center z-10 text-white">
               Sunny-Jay.com
             </p>
