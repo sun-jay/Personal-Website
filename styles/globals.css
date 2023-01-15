@@ -18,7 +18,7 @@ html{
 }
 .animate-charcter
 {
-   text-transform: uppercase;
+  text-transform: uppercase;
   background-image: linear-gradient(
     -225deg,
     #231557 0%,
@@ -35,7 +35,6 @@ html{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 3s linear infinite;
-  display: inline-block;
 }
 
 @keyframes textclip {
@@ -45,7 +44,6 @@ html{
 }
 
 .linear-wipe {
-  text-align: center;
   z-index: 40;
   background: linear-gradient(to right, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82, #f79533);
   background-size: 200% auto;
@@ -156,3 +154,13 @@ html{
       opacity: 1;
    }
 }
+
+.glow {
+  color: rgb(0, 0, 0);
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+  text-shadow: 0 0 30px #3a1025, 0 0 30px #e60073
+
+}
+
