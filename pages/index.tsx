@@ -25,7 +25,6 @@ export default function Home() {
         desc="Mathematical Animations programmed using Python for the graphical visualization of Maclaurin polynomials, inspired by Grant Sanderson's 3Blue1Brown productions and animated using his python library Manim."
         link="https://www.youtube.com/embed/XrhA0JylwF8"
         color = "gray"
-        special = "true"
       />
       <Project
         name="Fly me to the moon one man band - Piano, Vocals, Bass, Drums, and harp?"

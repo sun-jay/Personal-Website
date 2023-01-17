@@ -23,7 +23,9 @@ const Project = ({link, name, desc, color}) => {
           ></iframe>
         </div>
         <div id="text" className="md:p-3 md:w-6/12 w-full">
-          <p className="hidden md:block md:m-4 m-2 text-xl  animate-charcter font-bold">
+          <p className= {name === "Bay Area Creative Youth Awards: Interstellar Main Theme - Hanz Zimmer -Performed by Sunny Jayaram"?
+          "hidden md:block md:m-4 m-2 text-xl animate-charcter font-bold":
+          "hidden md:block md:m-4 m-2 text-xl text-red-600 font-bold"}>
           {name}
           </p>
           <p className="text-center	md:text-left md:m-4 m-0 mt-5 text-sm md:text-md text-black	">
