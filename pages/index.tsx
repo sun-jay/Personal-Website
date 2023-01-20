@@ -14,7 +14,7 @@ export default function Home() {
       <Hero />
       {/* <Slider slides = {SliderData} /> */}
       <Project
-        name="Bay Area Creative Youth Awards: Interstellar Main Theme - Hanz Zimmer -Performed by Sunny Jayaram"
+        name="Bay Area Creative Youth Awards: Interstellar Main Theme - Hans Zimmer -Performed by Sunny Jayaram"
         desc="A piano cover of the main theme from the movie interstellar, with inspiration from Dorian Marko's viral Cornfield Chase cover and other renditions of the score. "
         link="https://www.youtube.com/embed/yN2Wdw3ne8g"
         color = "white"

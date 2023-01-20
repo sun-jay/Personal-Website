@@ -40,7 +40,7 @@ const hero = () => {
           </div>
 
           <div class="w-full bg-black bg-opacity-80 rounded-lg md:w-8/12 mt-1 md:ml-8 m-2">
-            <p className="linear-wipe m-2 max-[350px]:text-3xl text-4xl lg:text-6xl text-center z-10 text-white">
+            <p className="linear-wipe m-2 max-[370px]:text-3xl text-4xl lg:text-6xl text-center z-10 text-white">
               Sunny-Jay.com
               {/* <div className="">
               <TypeAnimation
@@ -60,7 +60,7 @@ const hero = () => {
               
             </p>
             <div className="md:m-4  m-1 mt-5 mb-4">
-              <p className="max-[360px]:text-xs text-xl text-center text-white	">
+              <p className="max-[380px]:text-sm text-xl text-center text-white	">
                 Hi, I&#39;m Sunny Jayaram. I&#39;m a student at California High
                 School going into Comp Sci. I enjoy playing the piano, coding,
                 lifting, gaming, competing at hackathons, basketball, music
@@ -68,7 +68,7 @@ const hero = () => {
               </p>
             </div>
             <div className="md:m-4  m-1 mt-5 mb-4">
-              <p className="max-[360px]:text-xs text-xl text-center text-white	">
+              <p className="max-[380px]:text-sm text-xl text-center text-white	">
                 This website was coded from scratch using Next.js, React.js,
                 TailWind CSS, and Spline 3D, and serves as a record of my
                 progress in frontend development, while also documenting my
