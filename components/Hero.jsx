@@ -9,7 +9,7 @@ import Zoom from "react-reveal/Zoom"; // Importing Zoom effect
 import { TypeAnimation } from 'react-type-animation';
 
 
-const hero = () => {
+const Hero = () => {
 
   const [mounted, setMounted] = useState(false);
   const handleMount = () => {
@@ -97,4 +97,4 @@ const hero = () => {
   );
 };
 
-export default hero;
+export default Hero;
