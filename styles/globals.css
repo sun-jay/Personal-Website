@@ -164,3 +164,6 @@ html{
 
 }
 
+.delay-1500 {
+  transition-delay: 1800ms;
+}

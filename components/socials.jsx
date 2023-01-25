@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect } from 'react';
 import { SocialIcon } from 'react-social-icons';
 
 
@@ -7,13 +8,12 @@ import { SocialIcon } from 'react-social-icons';
 
 const Socials = () => {
 
-
+  // useEffect(() => onClick(), [])
 
   return (
     
     <div className='flex  justify-evenly '>
-          
-        <div className='p-1'>
+        <div className='p-1 text-white'>
           <SocialIcon  bgColor = "#FF0000" fgColor = "#FFFFFF" url="https://www.youtube.com/channel/UC2kIgU1hMcvb2DT9CNa5a3g" />
         </div>
         <div className='p-1'>

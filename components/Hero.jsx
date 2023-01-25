@@ -10,12 +10,19 @@ import { TypeAnimation } from 'react-type-animation';
 
 
 const hero = () => {
+
+  const [mounted, setMounted] = useState(false);
+  const handleMount = () => {
+    setMounted(true)
+  }
+  // const [visible, setColor] = useState("blue");
+  // useEffect(()=> setColor( mounted?"green":"blue" ) )
   return (
     <div className="flex flex-row items-end  justify-center md:h-screen bigh w-full">
       {/* <div className="absolute top-0 left-0 right-0 bottom-0 h-screen w-full bg-auto md:bg-cover bg-fixed bg-center custom-img z -z-50"></div> */}
       <div className="bg_thatblack text-white flex flex-col items-center justify-center absolute -z-10 top-0 left-0 right-0 bottom-0 md:h-screen bigh w-full ">
-        <div className="absoloute top-0 left-0 w-screen h-screen flex flex-col items-center justify-center">
-          <p className="linear-wipe m-2 max-[350px]:text-3xl text-4xl lg:text-6xl text-center z-10 text-white">
+        <div style={{ opacity: mounted?0:1 }} className="absoloute top-0 left-0 w-screen h-screen flex flex-col items-center justify-center">
+          <p className="linear-wipe m-2 max-[350px]:text-3xl tewxt-4xl lg:text-6xl text-center z-10 text-white">
             Sunny-Jay.com
           </p>
           LOADING...
@@ -24,13 +31,14 @@ const hero = () => {
       {/* <div className="hidden md:absolute md:block top-0 left-0 right-0 bottom-0 bigh md:h-screen w-full ">
         <Anim/>
       </div> */}
-      <div className="absolute  top-0 left-0 right-0 bottom-0 bigh md:h-screen w-full ">
-        <Anim2 />
+      <div  className="absolute top-0 left-0 right-0 bottom-0 bigh md:h-screen w-full ">
+        <Anim2 onL={handleMount}/>
       </div>
 
-      <div className="fade-d fade-m md:mt-0 mt-8 absolute top-0 left-0 right-0 bottom-0 grid place-items-center md:h-screen bigh  w-full ">
+      <div className="md:mt-0 mt-8 absolute top-0 left-0 right-0 bottom-0 grid place-items-center md:h-screen bigh  w-full "      >
         <div className="items-center m-auto flex flex-col md:flex-row w-9/12  ">
-          <div className="flex-col items-center w-9/12 md:w-4/12 ">
+          
+          <div style={{ opacity: mounted?1:0 }} className="transition ease-linear duration-1000 delay-1500 flex-col items-center w-9/12 md:w-4/12 ">
             <img className=" z-10" src="IMG_8285 2-modified (1).png" />
             {/* <div className = "mt-2 p-1 lg:bg-black lg:rounded-full lg:bg-opacity-50 lg:m-4 lg:border-black"> */}
             <div className="mt-2 p-1 lg:bg-black lg:rounded-full lg:bg-opacity-50 lg:m-4 lg:border-black">
@@ -39,9 +47,9 @@ const hero = () => {
             </div>
           </div>
 
-          <div class="w-full bg-black bg-opacity-80 rounded-lg md:w-8/12 mt-1 md:ml-8 m-2">
+          <div style={{ opacity: mounted?1:0 }} className="transition ease-linear duration-1000 delay-1500 w-full bg-black bg-opacity-80 rounded-lg md:w-8/12 mt-1 md:ml-8 m-2">
             <p className="linear-wipe m-2 max-[370px]:text-3xl text-4xl lg:text-6xl text-center z-10 text-white">
-              Sunny-Jay.com
+              Sunny-Jay.com 
               {/* <div className="">
               <TypeAnimation
                 sequence={[
@@ -80,7 +88,8 @@ const hero = () => {
       </div>
 
       <FaArrowCircleDown
-        className="fade-d fade-m  pb-16 md:block hidden animate-[bounce_2s_ease-in-out_infinite]  text-white/70 select-none z-[2]"
+        style={{ opacity: mounted?1:0 }}
+         className="transition ease-linear duration-1000 delay-1500 pb-16 md:block hidden animate-[bounce_2s_ease-in-out_infinite]  text-white/70 select-none z-[2]"
         size={140}
         opacity={0.5}
       />

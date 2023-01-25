@@ -2,13 +2,13 @@ import Spline from '@splinetool/react-spline';
 import { useState, useEffect } from 'react';
 
 
-const Anim = () => {
-
-    return (
-          <Spline scene="
+const Anim = ({ onL }) => {
+      useEffect(() => onL(), [])
+      // const onl = () => onClick
+      return (
+            <Spline  scene="
           scene (3).splinecode
-          " 
-                    />
+          " />
 
       );
 }
