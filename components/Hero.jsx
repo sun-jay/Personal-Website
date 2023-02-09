@@ -68,7 +68,7 @@ const Hero = () => {
               
             </p>
             <div className="md:m-4  m-1 mt-5 mb-4">
-              <p className="max-[380px]:text-sm text-xl text-center text-white	">
+              <p className="max-[380px]:text-sm text-lg md:text-xl text-center text-white	">
                 Hi, I&#39;m Sunny Jayaram. I&#39;m a student at California High
                 School going into Comp Sci. I enjoy playing the piano, coding,
                 lifting, gaming, competing at hackathons, basketball, music
@@ -76,7 +76,7 @@ const Hero = () => {
               </p>
             </div>
             <div className="md:m-4  m-1 mt-5 mb-4">
-              <p className="max-[380px]:text-sm text-xl text-center text-white	">
+              <p className="max-[380px]:text-sm text-lg md:text-xl text-center text-white	">
                 This website was coded from scratch using Next.js, React.js,
                 TailWind CSS, and Spline 3D, and serves as a record of my
                 progress in frontend development, while also documenting my
