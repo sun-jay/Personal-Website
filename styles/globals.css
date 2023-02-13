@@ -167,3 +167,7 @@ html{
 .delay-1500 {
   transition-delay: 1800ms;
 }
+
+.testglow{
+  text-shadow:1px 1px 10px rgb(162, 38, 149), 1px 1px 10px #ccc;
+}
