@@ -89,7 +89,7 @@ const Hero = () => {
 
       <FaArrowCircleDown
         style={{ opacity: mounted?1:0 }}
-         className="transition ease-linear duration-1000 delay-1500 pb-16 md:block hidden animate-[bounce_2s_ease-in-out_infinite]  text-white/70 select-none z-[2]"
+         className="transition ease-linear duration-1000 delay-1500 pb-16 lg:block hidden animate-[bounce_2s_ease-in-out_infinite]  text-white/70 select-none z-[2]"
         size={140}
         opacity={0.5}
       />
