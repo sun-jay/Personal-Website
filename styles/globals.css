@@ -88,8 +88,12 @@ html{
 
 .sb_center{
   overflow-x: hidden;
-  padding-left: calc(100vw - 100%);
+  /* padding-right: calc(100vw - 100%); */
 }
+/* .sb_center_opp{
+  overflow-x: hidden;
+  padding-left: calc(100vw - 100%);
+} */
 
 .bg_thatblack{
   background: #121212;

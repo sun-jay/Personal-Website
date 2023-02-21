@@ -21,7 +21,7 @@ const Hero = () => {
     <div className="flex flex-row items-end  justify-center md:h-screen bigh w-full">
       {/* <div className="absolute top-0 left-0 right-0 bottom-0 h-screen w-full bg-auto md:bg-cover bg-fixed bg-center custom-img z -z-50"></div> */}
       <div className="bg_thatblack text-white flex flex-col items-center justify-center absolute -z-10 top-0 left-0 right-0 bottom-0 md:h-screen bigh w-full ">
-        <div style={{ opacity: mounted?0:1 }} className="absoloute top-0 left-0 w-screen h-screen flex flex-col items-center justify-center">
+        <div style={{ opacity: mounted?0:1 }} className="absoloute top-0 left-0 w-full h-screen flex flex-col items-center justify-center">
           <p className="linear-wipe m-2 max-[350px]:text-3xl tewxt-4xl lg:text-6xl text-center z-10 text-white">
             Sunny-Jay.com
           </p>

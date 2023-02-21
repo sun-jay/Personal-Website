@@ -6,6 +6,7 @@ import { SliderData } from "../components/SliderData";
 import Assemble_Proj from "../components/Assemble_Proj";
 import Project from "../components/Project";
 import { useState } from "react";
+import Tabs from "../components/Tabs";
 
 export default function Home() {
   const [tab, setTab] = useState("all");
@@ -52,42 +53,9 @@ export default function Home() {
   return (
     <div className="">
       <Hero />
+      <Tabs tab={tab} setTab={setTab} />
 
-      <div className="w-full h-auto border-t-2 flex items-center justify-center text-white bg_thatblack ">
-        <div className="text-5xl  p-4 ">My Projects:</div>
-      </div>
-      <div className="w-full h-auto flex items-center justify-center text-white bg_thatblack">
-        <div
-          onClick={() => setTab("all")}
-          className={
-            tab == "all"
-              ? "text-2xl w-6/12 text-center p-4 border-b-8 testglow border-b-red-300 ease-in duration-100"
-              : "text-2xl w-6/12 text-center p-4 ease-in duration-100 "
-          }
-        >
-          All
-        </div>
-        <div
-          onClick={() => setTab("music")}
-          className={
-            tab == "music"
-              ? "text-2xl w-6/12 text-center p-4 border-b-8 testglow border-b-red-300  ease-in duration-100"
-              : "text-2xl w-6/12 text-center p-4 ease-in duration-100 "
-          }
-        >
-          Music
-        </div>
-        <div
-          onClick={() => setTab("tech")}
-          className={
-            tab == "tech"
-              ? "text-2xl w-6/12 text-center p-4 border-b-8 testglow border-b-red-300  ease-in duration-100"
-              : "text-2xl w-6/12 text-center p-4 ease-in duration-100 "
-          }
-        >
-          Tech
-        </div>
-      </div>
+
       {tab == "all" ? arrjsx.map((p, i) => p) : <div></div>}
       {tab == "music" ? [arrjsx[0], arrjsx[3], arrjsx[5]] : <div></div>}
       {tab == "tech" ? [arrjsx[1], arrjsx[2], arrjsx[4]] : <div></div>}
