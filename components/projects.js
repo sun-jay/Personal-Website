@@ -1,11 +1,11 @@
 import Head from "next/head";
 import Image from "next/image";
-import Hero from "../components/Hero";
-import Slider from "../components/Slider";
-import { SliderData } from "../components/SliderData";
-import Assemble_Proj from "../components/Assemble_Proj";
-import Project from "../components/Project";
-import Projects_Header from "../components/Projects_Header"
+import Hero from "./Hero";
+import Slider from "./Slider";
+import { SliderData } from "./SliderData";
+import Assemble_Proj from "./Assemble_Proj";
+import Project from "./Project";
+import Projects_Header from "./Projects_Header"
 
 export default function Home() {
   return (

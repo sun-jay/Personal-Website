@@ -35,9 +35,9 @@ const Navbar = () => {
           <li className={cur === "Home"? "p-4 font-bold	": "p-4"}>
             <Link onClick={()=>{handleNav; setCur('Home')}} href="/">Home</Link>
           </li>
-          <li className={cur === "Projects"? "p-4 font-bold	": "p-4 "}>
+          {/* <li className={cur === "Projects"? "p-4 font-bold	": "p-4 "}>
             <Link onClick={()=>{handleNav; setCur('Projects')}} href="/projects">Projects</Link>
-          </li>
+          </li> */}
           {/* <li className="p-4">
             <Link href="/work">Work</Link>
           </li>
@@ -65,9 +65,9 @@ const Navbar = () => {
             <li className={cur === "Home"? "font-bold p-4 text-4xl hover:text-gray-500": "p-4 text-4xl hover:text-gray-500"}>
               <Link onClick={()=>{handleNav(); setCur('Home');}} href="/">Home</Link>
             </li>
-            <li className={cur === "Projects"? "font-bold p-4 text-4xl hover:text-gray-500": "p-4 text-4xl hover:text-gray-500"}>
+            {/* <li className={cur === "Projects"? "font-bold p-4 text-4xl hover:text-gray-500": "p-4 text-4xl hover:text-gray-500"}>
               <Link onClick={()=>{handleNav(); setCur('Projects');}} href="/projects">Projects</Link>
-            </li>
+            </li> */}
             {/* <li className="p-4 text-4xl hover:text-gray-500">
               <Link href="/work">Work</Link>
             </li>
