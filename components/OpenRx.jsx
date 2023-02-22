@@ -31,7 +31,7 @@ const OpenRx = () => {
             Winner Of Best New Technology Hack at CruzHacks 2023:
           </p>
           <p className="  hidden md:block md:m-4 m-2 text-xl text-red-600 font-bold">
-          <span>OpenRx</span> - <a href="https://devpost.com/software/openrx-v8whuo" target="_blank"><span className="underline">On Devpost</span></a>
+          <span>OpenRx</span> - <a href="https://devpost.com/software/openrx-v8whuo" rel="noreferrer" target="_blank"><span className="underline">On Devpost</span></a>
           </p>
           <p className="text-center	md:text-left md:m-4 m-0 mt-5 text-sm md:text-md text-black">
           CruzHacks is the largest hackathon in Santa Cruz. In 2023, CruzHacks gathered 650 students from over 25 universities. Our team&apos;s project, OpenRx, aimed to benefit elderly and disabled people by making prescription management as simple as snapping a picture, and receiving notification reminders. OpenRx utilizes advanced technologies, including Next.js for handling routing and optimization, React.js for the frontend UI, TailwindCSS for styling, Firebase for authentication and data security, Microsoft Azure Cloud Vision Services OCR for reading prescription information, OpenAI for prescription recognition and parsing, and Twilio for real-time and scheduled reminders. These technologies were carefully selected to create a seamless experience for users and to achieve the project&apos;s goal of making prescription management easier and more accessible, winning our team &quot;Best New Technology Hack&quot; at CruzHacks 2023.
