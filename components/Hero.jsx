@@ -20,7 +20,7 @@ const Hero = () => {
     setTimeout(() => {
       setMounted(true)
     }, 500);
-  }, [])
+  }, [mounted])
   // const [visible, setColor] = useState("blue");
   // useEffect(()=> setColor( mounted?"green":"blue" ) )
   return (
@@ -41,7 +41,7 @@ const Hero = () => {
         <BG onLoad={handleMount}/>
       </div> */}
       <BG />
-      <div className="md:mt-0 absolute top-0 left-0 right-0 bottom-0 grid place-items-center md:h-screen bigh  w-full "      >
+      <div onLoad={handleMount} className="md:mt-0 absolute top-0 left-0 right-0 bottom-0 grid place-items-center md:h-screen bigh  w-full "      >
         <div className="items-center m-auto flex flex-col md:flex-row w-9/12  ">
           
           <div style={{ opacity: mounted?1:0 }} className="transition ease-linear duration-1000 flex-col items-center w-9/12 md:w-4/12 ">
