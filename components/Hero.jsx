@@ -7,6 +7,7 @@ import Project from "./Project";
 import { useState, useEffect } from "react";
 import Zoom from "react-reveal/Zoom"; // Importing Zoom effect
 import { TypeAnimation } from 'react-type-animation';
+import BG from "./BG";
 
 
 const Hero = () => {
@@ -15,41 +16,46 @@ const Hero = () => {
   const handleMount = () => {
     setMounted(true)
   }
+  useEffect(() => {
+    setTimeout(() => {
+      setMounted(true)
+    }, 500);
+  }, [])
   // const [visible, setColor] = useState("blue");
   // useEffect(()=> setColor( mounted?"green":"blue" ) )
   return (
     <div className="flex flex-row items-end  justify-center md:h-screen bigh w-full">
       {/* <div className="absolute top-0 left-0 right-0 bottom-0 h-screen w-full bg-auto md:bg-cover bg-fixed bg-center custom-img z -z-50"></div> */}
-      <div className="bg_thatblack text-white flex flex-col items-center justify-center absolute -z-10 top-0 left-0 right-0 bottom-0 md:h-screen bigh w-full ">
+      {/* <div className="bg_thatblack text-white flex flex-col items-center justify-center absolute -z-10 top-0 left-0 right-0 bottom-0 md:h-screen bigh w-full ">
         <div style={{ opacity: mounted?0:1 }} className="absoloute top-0 left-0 w-full h-screen flex flex-col items-center justify-center">
           <p className="linear-wipe m-2 max-[350px]:text-3xl tewxt-4xl lg:text-6xl text-center z-10 text-white">
             Sunny-Jay.com
           </p>
           LOADING...
         </div>
-      </div>
+      </div> */}
       {/* <div className="hidden md:absolute md:block top-0 left-0 right-0 bottom-0 bigh md:h-screen w-full ">
         <Anim/>
       </div> */}
-      <div  className="absolute top-0 left-0 right-0 bottom-0 bigh md:h-screen w-full ">
-        <Anim2 onL={handleMount}/>
-      </div>
-
-      <div className="md:mt-0 mt-8 absolute top-0 left-0 right-0 bottom-0 grid place-items-center md:h-screen bigh  w-full "      >
+      {/* <div  className="absolute top-0 left-0 right-0 bottom-0 bigh md:h-screen w-full ">
+        <BG onLoad={handleMount}/>
+      </div> */}
+      <BG />
+      <div className="md:mt-0 absolute top-0 left-0 right-0 bottom-0 grid place-items-center md:h-screen bigh  w-full "      >
         <div className="items-center m-auto flex flex-col md:flex-row w-9/12  ">
           
-          <div style={{ opacity: mounted?1:0 }} className="transition ease-linear duration-1000 delay-1500 flex-col items-center w-9/12 md:w-4/12 ">
+          <div style={{ opacity: mounted?1:0 }} className="transition ease-linear duration-1000 flex-col items-center w-9/12 md:w-4/12 ">
             <img className=" z-10" src="IMG_8285 2-modified (1).png" />
             {/* <div className = "mt-2 p-1 lg:bg-black lg:rounded-full lg:bg-opacity-50 lg:m-4 lg:border-black"> */}
-            <div className="mt-2 p-1 lg:bg-black lg:rounded-full lg:bg-opacity-50 lg:m-4 lg:border-black">
+            <div className="mt-2 mb-1 lg:bg-black lg:rounded-full lg:bg-opacity-50 lg:m-4 lg:border-black">
               <Socials />
               {/* <p className="text-white">{String(isLoaded)}</p> */}
             </div>
           </div>
 
-          <div style={{ opacity: mounted?1:0 }} className="transition ease-linear duration-1000 delay-1500 w-full bg-black bg-opacity-80 rounded-lg md:w-8/12 mt-1 md:ml-8 m-2">
+          <div style={{ opacity: mounted?1:0 }} className="transition ease-linear duration-1000 w-full bg-black bg-opacity-80 rounded-lg md:w-8/12 mt-1 md:ml-8 m-2">
             <p className="linear-wipe m-2 max-[370px]:text-3xl text-4xl lg:text-6xl text-center z-10 text-white">
-              Sunny-Jay.com 
+              Sunny Jayaram
               {/* <div className="">
               <TypeAnimation
                 sequence={[
@@ -67,7 +73,7 @@ const Hero = () => {
               </div> */}
               
             </p>
-            <div className="md:m-4  m-1 mt-5 mb-4">
+            <div className="md:m-4 ml-2 mr-2  mt-4 mb-4">
               <p className="max-[380px]:text-sm text-lg md:text-xl text-center text-white	">
                 Hi, I&#39;m Sunny Jayaram. I&#39;m a student at California High
                 School going into Comp Sci. I enjoy playing the piano, coding,
@@ -75,12 +81,12 @@ const Hero = () => {
                 production, and many other hobbies.
               </p>
             </div>
-            <div className="md:m-4  m-1 mt-5 mb-4">
+            <div className="md:m-4 ml-2 mr-2  mt-5 mb-4">
               <p className="max-[380px]:text-sm text-lg md:text-xl text-center text-white	">
                 This website was coded from scratch using Next.js, React.js,
                 TailWind CSS, and Spline 3D, and serves as a record of my
                 progress in frontend development, while also documenting my
-                other projects and achievements.
+                other projects and achievements. See more on my <span className="underline"><a target="_blank" rel="noopener noreferrer" href="/resume.pdf">resume↗</a></span>
               </p>
             </div>
           </div>
@@ -89,7 +95,7 @@ const Hero = () => {
 
       <FaArrowCircleDown
         style={{ opacity: mounted?1:0 }}
-         className="transition ease-linear duration-1000 delay-1500 pb-16 lg:block hidden animate-[bounce_2s_ease-in-out_infinite]  text-white/70 select-none z-[2]"
+         className="transition ease-linear duration-1000 pb-16 lg:block hidden animate-[bounce_2s_ease-in-out_infinite]  text-white/70 select-none z-[2]"
         size={140}
         opacity={0.5}
       />
