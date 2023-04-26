@@ -8,6 +8,7 @@ import Project from "../components/Project";
 import { useState } from "react";
 import Tabs from "../components/Tabs";
 import OpenRx from "../components/OpenRx";
+import Search from "../components/Search";
 
 export default function Home() {
   const [tab, setTab] = useState("all");
@@ -51,6 +52,16 @@ export default function Home() {
       link="https://www.youtube.com/embed/gTXDrLrzH6k"
       color="white"
     />,
+    "search":<Search
+    key={6}
+      name="Live: SRVUSD Course Catalog Semantic Search Engine"
+      desc={`A semantic search engine uses AI-powered semantic analysis to match queries, rather than just keyword matching. Not only can this search scale to huge datasets with amazing efficiency, but it can also understand the meaning of the query, leading to more accurate results with less accurate queries.
+      This website was built using Next.js, React.js, Tailwind CSS, and Vercel Edge funcitons. The search engine utilizes OpenAI 
+      text embeddings and a Pinecone Vector Database to index the documents and perform the semantic search.
+      `}
+      link="https://www.youtube.com/embed/gTXDrLrzH6k"
+      color="white"
+    />,
     "openrx":<OpenRx/>
     
   };
@@ -63,11 +74,11 @@ export default function Home() {
 
       {tab == "all" ? 
 
-      [arrjsx['openrx'], arrjsx['assemble'],arrjsx['inter'],arrjsx['euler'],arrjsx['fly band'],arrjsx['ap'], arrjsx['imp']] 
+      [arrjsx['openrx'], arrjsx['search'], arrjsx['assemble'],arrjsx['inter'],arrjsx['euler'],arrjsx['fly band'],arrjsx['ap'], arrjsx['imp']] 
   
       : <div></div>}
       {tab == "music" ? [arrjsx['inter'],arrjsx['fly band'], arrjsx['imp']]  : <div></div>}
-      {tab == "tech" ? [[arrjsx['openrx'], arrjsx['assemble'],arrjsx['euler'],arrjsx['ap']] ] : <div></div>}
+      {tab == "tech" ? [[arrjsx['openrx'], arrjsx['search'], arrjsx['assemble'],arrjsx['euler'],arrjsx['ap']] ] : <div></div>}
     </div>
   );
 }

@@ -185,21 +185,7 @@ html{
 }
 
 .changebg {
-  background:#080808;
-  animation: changebg 2s ease-in-out;
-  -webkit-animation: changebg 2s ease-in-out;
-  -moz-animation: changebg 2s ease-in-out;
-  -o-animation: changebg 2s ease-in-out;
-  -ms-animation: changebg 2s ease-in-out;}
-
-@keyframes changebg {
-  0% {
-    background: #000000;
-  }
-  100% {
-    background: #080808;
-  }
-  
+  background: #080808; 
 }
 
 .blob-c {
