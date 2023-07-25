@@ -75,9 +75,8 @@ const Hero = () => {
             </p>
             <div className="md:m-4 ml-2 mr-2  mt-4 mb-4">
               <p className="max-[380px]:text-sm text-lg md:text-xl text-center text-white	">
-                Hi, I&#39;m Sunny Jayaram. I&#39;m a student at California High
-                School going into Comp Sci. I enjoy playing the piano, coding,
-                lifting, gaming, competing at hackathons, basketball, music
+                Hi, I&#39;m Sunny Jayaram. I&#39;m a student in the Bay Area going into Comp Sci. I enjoy playing the piano, coding,
+                lifting, competing at hackathons, basketball, music
                 production, and many other hobbies.
               </p>
             </div>

@@ -9,6 +9,7 @@ import { useState } from "react";
 import Tabs from "../components/Tabs";
 import OpenRx from "../components/OpenRx";
 import Search from "../components/Search";
+import Bookmark from "../components/Bookmark"
 
 export default function Home() {
   const [tab, setTab] = useState("all");
@@ -62,7 +63,9 @@ export default function Home() {
       link="https://www.youtube.com/embed/gTXDrLrzH6k"
       color="white"
     />,
-    "openrx":<OpenRx/>
+    "openrx":<OpenRx/>,
+    "bookmark": <Bookmark/>
+
     
   };
 
@@ -74,11 +77,11 @@ export default function Home() {
 
       {tab == "all" ? 
 
-      [arrjsx['openrx'], arrjsx['search'], arrjsx['assemble'],arrjsx['inter'],arrjsx['euler'],arrjsx['fly band'],arrjsx['ap'], arrjsx['imp']] 
+      [arrjsx['bookmark'], arrjsx['openrx'], arrjsx['search'], arrjsx['assemble'],arrjsx['inter'],arrjsx['euler'],arrjsx['fly band'],arrjsx['ap'], arrjsx['imp']] 
   
       : <div></div>}
       {tab == "music" ? [arrjsx['inter'],arrjsx['fly band'], arrjsx['imp']]  : <div></div>}
-      {tab == "tech" ? [[arrjsx['openrx'], arrjsx['search'], arrjsx['assemble'],arrjsx['euler'],arrjsx['ap']] ] : <div></div>}
+      {tab == "tech" ? [arrjsx['bookmark'] ,[arrjsx['openrx'], arrjsx['search'], arrjsx['assemble'],arrjsx['euler'],arrjsx['ap']]] : <div></div>}
     </div>
   );
 }
