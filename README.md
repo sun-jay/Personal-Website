@@ -4,4 +4,3 @@ Sunny Jayaram's Personal Website and Project Portfolio
 
 Coded from using Next.js, React.js, TailWind CSS, and Spline 3D
 
-# nextjs_flask_ai_security_server
