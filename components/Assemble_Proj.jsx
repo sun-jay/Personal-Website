@@ -28,7 +28,7 @@ const Assemble_Proj = () => {
         </div>
         <div id="text" className="md:p-3 md:w-6/12 w-full">
           <p className="animate-charcter text-center md:text-left md: text-rightmd:m-4 pt-4 md:pl-4 text-2xl text-red-600 font-bold italic underline">
-          Assemble Hackathon SF &ldquo;The Most Polished Project&ldquo; Award Winner:
+          Winner of &ldquo;The Most Polished Project&ldquo; award at Assemble Hackathon SF by Hack Club
           </p>
           <p className="  hidden md:block md:m-4 m-2 text-xl text-red-600 font-bold">
           Sound Waves and Music: a Visual Explanation 

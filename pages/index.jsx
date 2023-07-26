@@ -10,18 +10,13 @@ import Tabs from "../components/Tabs";
 import OpenRx from "../components/OpenRx";
 import Search from "../components/Search";
 import Bookmark from "../components/Bookmark"
+import Inter from "../components/Interstellar"
 
 export default function Home() {
   const [tab, setTab] = useState("all");
 
   const arrjsx = {
-    "inter": <Project
-      key={0}
-      name="Bay Area Creative Youth Awards: Interstellar Main Theme - Hans Zimmer -Performed by Sunny Jayaram"
-      desc="A piano cover of the main theme from the movie interstellar, with inspiration from Dorian Marko's viral Cornfield Chase cover and other renditions of the score. "
-      link="https://www.youtube.com/embed/yN2Wdw3ne8g"
-      color="white"
-    />,
+    "inter": <Inter/>,
     "assemble":
     <Assemble_Proj 
     key={1}/>,
@@ -77,11 +72,11 @@ export default function Home() {
 
       {tab == "all" ? 
 
-      [arrjsx['bookmark'], arrjsx['openrx'], arrjsx['search'], arrjsx['assemble'],arrjsx['inter'],arrjsx['euler'],arrjsx['fly band'],arrjsx['ap'], arrjsx['imp']] 
+      [arrjsx['bookmark'], arrjsx['openrx'],arrjsx['assemble'],arrjsx['inter'],arrjsx['euler'], arrjsx['search'], arrjsx['fly band'],arrjsx['ap'], arrjsx['imp']] 
   
       : <div></div>}
       {tab == "music" ? [arrjsx['inter'],arrjsx['fly band'], arrjsx['imp']]  : <div></div>}
-      {tab == "tech" ? [arrjsx['bookmark'] ,[arrjsx['openrx'], arrjsx['search'], arrjsx['assemble'],arrjsx['euler'],arrjsx['ap']]] : <div></div>}
+      {tab == "tech" ? [arrjsx['bookmark'] ,[arrjsx['openrx'], arrjsx['assemble'],arrjsx['search'],arrjsx['euler'],arrjsx['ap']]] : <div></div>}
     </div>
   );
 }

@@ -14,12 +14,12 @@ const OpenRx = () => {
                 and achievements.
           </p> */}
           <p className=" text-center	md:text-left md:m-4 mb-4 text-xl text-red-600 font-bold ">
-          Bookmark.ai
+          Interstellar Piano Cover
           </p>
         </div>
         <div id = "vid" className="md:w-6/12 w-full  aspect-video">
           <iframe
-            src="https://www.youtube.com/embed/1ymM8s_Q13c"
+            src="https://www.youtube.com/embed/yN2Wdw3ne8g"
             frameborder=""
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
@@ -28,13 +28,13 @@ const OpenRx = () => {
         </div>
         <div id="text" className="md:p-3 md:w-6/12 w-full">
           <p className="animate-charcter text-center md:text-left md: text-rightmd:m-4 pt-4 md:pl-4 text-2xl text-red-600 font-bold italic underline">
-            Winner of LanceDB&#39;s $5000 sponsor prize at AI x Product Hackathon SF
+            Winner of special award for music performance by bay area creative youth foundation
           </p>
-          <p className="  hidden md:block md:m-4 m-2 text-xl text-red-600 font-bold">
-          <span>Bookmark.ai</span> - <a href="https://devpost.com/software/bookmark-ai" rel="noreferrer" target="_blank"><span className="underline">On Devpost</span></a>
-          </p>
+          {/* <p className="  hidden md:block md:m-4 m-2 text-xl text-red-600 font-bold">
+          <span>OpenRx</span> - <a href="https://devpost.com/software/openrx-v8whuo" rel="noreferrer" target="_blank"><span className="underline">On Devpost</span></a>
+          </p> */}
           <p className="text-center	md:text-left md:m-4 m-0 mt-5 text-sm md:text-md text-black">
-          AI x Product Hackathon SF was a professional level hackathon that attracted talent from around the world to innovate upon up and coming platforms in generative AI. My team&#39;s project revolutionized bookmarks using AI, turning links into a powerful AI assistant that can be updated with any knowledge with the click of a button. Devpost: https://devpost.com/software/bookmark-ai
+          A piano cover of the main theme from the movie interstellar, with inspiration from Dorian Marko's viral Cornfield Chase cover and other renditions of the score.
           </p>
         </div>
       </div>
