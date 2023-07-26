@@ -34,7 +34,7 @@ const OpenRx = () => {
           <span>OpenRx</span> - <a href="https://devpost.com/software/openrx-v8whuo" rel="noreferrer" target="_blank"><span className="underline">On Devpost</span></a>
           </p> */}
           <p className="text-center	md:text-left md:m-4 m-0 mt-5 text-sm md:text-md text-black">
-          A piano cover of the main theme from the movie interstellar, with inspiration from Dorian Marko's viral Cornfield Chase cover and other renditions of the score.
+          A piano cover of the main theme from the movie interstellar, with inspiration from Dorian Marko&apos;s viral Cornfield Chase cover and other renditions of the score.
           </p>
         </div>
       </div>
