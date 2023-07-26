@@ -28,13 +28,13 @@ const OpenRx = () => {
         </div>
         <div id="text" className="md:p-3 md:w-6/12 w-full">
           <p className="animate-charcter text-center md:text-left md: text-rightmd:m-4 pt-4 md:pl-4 text-2xl text-red-600 font-bold italic underline">
-            Winner of LanceDB's $5000 sponsor prize at AI x Product Hackathon SF
+            Winner of LanceDB&#39;s $5000 sponsor prize at AI x Product Hackathon SF
           </p>
           <p className="  hidden md:block md:m-4 m-2 text-xl text-red-600 font-bold">
           <span>Bookmark.ai</span> - <a href="https://devpost.com/software/bookmark-ai" rel="noreferrer" target="_blank"><span className="underline">On Devpost</span></a>
           </p>
           <p className="text-center	md:text-left md:m-4 m-0 mt-5 text-sm md:text-md text-black">
-          AI x Product Hackathon SF was a professional level hackathon that attracted talent from around the world innovate upon up and coming platforms in generative AI. My team's project revolutionized bookmarks using AI, turning links into a powerful AI assistant that can be updated with any knowledge with the click of a button. Devpost: https://devpost.com/software/bookmark-ai
+          AI x Product Hackathon SF was a professional level hackathon that attracted talent from around the world innovate upon up and coming platforms in generative AI. My team&#39;s project revolutionized bookmarks using AI, turning links into a powerful AI assistant that can be updated with any knowledge with the click of a button. Devpost: https://devpost.com/software/bookmark-ai
           </p>
         </div>
       </div>
