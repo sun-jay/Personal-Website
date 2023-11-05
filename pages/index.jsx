@@ -11,6 +11,7 @@ import OpenRx from "../components/OpenRx";
 import Search from "../components/Search";
 import Bookmark from "../components/Bookmark"
 import Inter from "../components/Interstellar"
+import CalHacks10 from "../components/CalHacks10"
 
 export default function Home() {
   const [tab, setTab] = useState("all");
@@ -58,8 +59,10 @@ export default function Home() {
       link="https://www.youtube.com/embed/gTXDrLrzH6k"
       color="white"
     />,
-    "openrx":<OpenRx/>,
-    "bookmark": <Bookmark/>
+    "openrx":<OpenRx key={7}/>,
+    "bookmark": <Bookmark key={8}/>,
+    "calhacks10": <CalHacks10 key={9}/>,
+
 
     
   };
@@ -72,11 +75,11 @@ export default function Home() {
 
       {tab == "all" ? 
 
-      [arrjsx['bookmark'], arrjsx['openrx'],arrjsx['assemble'],arrjsx['inter'],arrjsx['euler'], arrjsx['search'], arrjsx['fly band'],arrjsx['ap'], arrjsx['imp']] 
+      [arrjsx['calhacks10'],arrjsx['bookmark'], arrjsx['openrx'],arrjsx['assemble'],arrjsx['inter'],arrjsx['euler'], arrjsx['fly band'],arrjsx['ap'], arrjsx['imp']] 
   
       : <div></div>}
       {tab == "music" ? [arrjsx['inter'],arrjsx['fly band'], arrjsx['imp']]  : <div></div>}
-      {tab == "tech" ? [arrjsx['bookmark'] ,[arrjsx['openrx'], arrjsx['assemble'],arrjsx['search'],arrjsx['euler'],arrjsx['ap']]] : <div></div>}
+      {tab == "tech" ? [arrjsx['calhacks10'],arrjsx['bookmark'] ,[arrjsx['openrx'], arrjsx['assemble'],arrjsx['euler'],arrjsx['ap']]] : <div></div>}
     </div>
   );
 }
