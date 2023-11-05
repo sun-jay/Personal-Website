@@ -10,25 +10,25 @@ import { TypeAnimation } from "react-type-animation";
 import BG from "./BG";
 
 const Hero = () => {
-  const [mounted, setMounted] = useState(false);
-  const handleMount = () => {
-    setMounted(true);
-  };
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  // const [image, setImage] = useState(null);
-  // const [imageLoaded, setImageLoaded] = useState(false);
-
+  // const [mounted, setMounted] = useState(false);
+  // const handleMount = () => {
+  //   setMounted(true);
+  // };
   // useEffect(() => {
-  //   const imageLoader = new Image();
-  //   imageLoader.src = "IMG_8285 2-modified (1).png";
-  //   imageLoader.onload = () => {
-  //     setImage(imageLoader);
-  //     setImageLoaded(true);
-  //   };
+  //   setMounted(true);
   // }, []);
+
+  const [image, setImage] = useState(null);
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  useEffect(() => {
+    const imageLoader = new Image();
+    imageLoader.src = "IMG_8285 2-modified (1).png";
+    imageLoader.onload = () => {
+      setImage(imageLoader);
+      setImageLoaded(true);
+    };
+  }, []);
 
   // const [visible, setColor] = useState("blue");
   // useEffect(()=> setColor( mounted?"green":"blue" ) )
@@ -50,30 +50,30 @@ const Hero = () => {
         <BG onLoad={handleMount}/>
       </div> */}
       <BG />
-      <div className="md:mt-0 absolute top-0 left-0 right-0 bottom-0 grid place-items-center md:h-screen bigh  w-full ">
+      <div className="fade-in-m md:mt-0 absolute top-0 left-0 right-0 bottom-0 grid place-items-center md:h-screen bigh  w-full ">
         <div className="items-center m-auto flex flex-col md:flex-row w-9/12  ">
           <div
-            style={{ opacity: mounted ? 1 : 0 }}
+            // style={{ opacity: mounted ? 1 : 0 }}
             className="transition ease-linear duration-1000 flex-col items-center w-9/12 md:w-4/12 "
           >
             {/* <img className=" z-10" src="IMG_8285 2-modified (1).png" /> */}
-            {/* {imageLoaded ? (
+            {imageLoaded ? (
               <img src={image.src} alt="Your Image" />
             ) : (
               <div
-                className="animate-pulse"
-                style={{
-                  width: "250px",
-                  height: "250px",
-                  backgroundColor: "#EEDFD2",
-                  borderRadius: "50%",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  margin: "0 auto", // Center horizontally using margin
-                }}
-              ></div>
-            )} */}
+              className="animate-pulse"
+              style={{
+                width: "100%", // Relative to the parent container's width
+                paddingTop: "100%", // Maintain a 1:1 aspect ratio (width:height)
+                backgroundColor: "#EEDFD2",
+                borderRadius: "50%",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            ></div>
+            )}
+            
 
             {/* <div className = "mt-2 p-1 lg:bg-black lg:rounded-full lg:bg-opacity-50 lg:m-4 lg:border-black"> */}
             <div className="mt-2 mb-1 lg:bg-black lg:rounded-full lg:bg-opacity-50 lg:m-4 lg:border-black">
@@ -83,7 +83,7 @@ const Hero = () => {
           </div>
 
           <div
-            style={{ opacity: mounted ? 1 : 0 }}
+            // style={{ opacity: mounted ? 1 : 0 }}
             className="transition ease-linear duration-1000 w-full bg-black bg-opacity-80 rounded-lg md:w-8/12 mt-1 md:ml-8 m-2"
           >
             <p className="linear-wipe m-2 max-[370px]:text-3xl text-4xl lg:text-6xl text-center z-10 text-white">
@@ -134,7 +134,7 @@ const Hero = () => {
       </div>
 
       <FaArrowCircleDown
-        style={{ opacity: mounted ? 1 : 0 }}
+        // style={{ opacity: mounted ? 1 : 0 }}
         className="transition ease-linear duration-1000 pb-16 lg:block hidden animate-[bounce_2s_ease-in-out_infinite]  text-white/70 select-none z-[2]"
         size={140}
         opacity={0.5}

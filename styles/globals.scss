@@ -127,11 +127,8 @@ html{
 }
 
 .fade-in-m {
-  animation: fadeInAnimation 1s ease 3s 1 normal both;
-  -webkit-animation: fadeInAnimation 1s ease 3s 1 normal both;
-  /* animation: fadeInAnimation ease 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards; */
+  animation: fadeInAnimation 2s ease-in-out;
+  -webkit-animation: fadeInAnimation 2s ease-in-out;
 }
 
 .full-o {
