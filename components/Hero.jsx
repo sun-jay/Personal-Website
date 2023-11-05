@@ -15,22 +15,20 @@ const Hero = () => {
     setMounted(true);
   };
   useEffect(() => {
-    setTimeout(() => {
-      setMounted(true);
-    }, 500);
+    setMounted(true);
   }, []);
 
-  const [image, setImage] = useState(null);
-  const [imageLoaded, setImageLoaded] = useState(false);
+  // const [image, setImage] = useState(null);
+  // const [imageLoaded, setImageLoaded] = useState(false);
 
-  useEffect(() => {
-    const imageLoader = new Image();
-    imageLoader.src = "IMG_8285 2-modified (1).png";
-    imageLoader.onload = () => {
-      setImage(imageLoader);
-      setImageLoaded(true);
-    };
-  }, []);
+  // useEffect(() => {
+  //   const imageLoader = new Image();
+  //   imageLoader.src = "IMG_8285 2-modified (1).png";
+  //   imageLoader.onload = () => {
+  //     setImage(imageLoader);
+  //     setImageLoaded(true);
+  //   };
+  // }, []);
 
   // const [visible, setColor] = useState("blue");
   // useEffect(()=> setColor( mounted?"green":"blue" ) )
@@ -59,11 +57,9 @@ const Hero = () => {
             className="transition ease-linear duration-1000 flex-col items-center w-9/12 md:w-4/12 "
           >
             {/* <img className=" z-10" src="IMG_8285 2-modified (1).png" /> */}
-            {imageLoaded ? (
+            {/* {imageLoaded ? (
               <img src={image.src} alt="Your Image" />
             ) : (
-              // render a css circle while the image is loading
-
               <div
                 className="animate-pulse"
                 style={{
@@ -77,7 +73,7 @@ const Hero = () => {
                   margin: "0 auto", // Center horizontally using margin
                 }}
               ></div>
-            )}
+            )} */}
 
             {/* <div className = "mt-2 p-1 lg:bg-black lg:rounded-full lg:bg-opacity-50 lg:m-4 lg:border-black"> */}
             <div className="mt-2 mb-1 lg:bg-black lg:rounded-full lg:bg-opacity-50 lg:m-4 lg:border-black">
