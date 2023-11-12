@@ -86,7 +86,7 @@ const Hero = () => {
             // style={{ opacity: mounted ? 1 : 0 }}
             className="transition ease-linear duration-1000 w-full bg-black bg-opacity-80 rounded-lg md:w-8/12 mt-1 md:ml-8 m-2"
           >
-            <p className="linear-wipe m-2 max-[370px]:text-3xl text-4xl lg:text-6xl text-center z-10 text-white">
+            <p className="text_red m-2 max-[370px]:text-3xl text-4xl lg:text-6xl text-center z-10 ">
               Sunny Jayaram
               {/* <div className="">
               <TypeAnimation
