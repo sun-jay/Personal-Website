@@ -309,24 +309,24 @@ html {
   transform: rotate(-180deg);
   animation: transform 8s ease-in-out infinite both alternate,
     movement_two 20s ease-in-out infinite both,
-    blobOneColor 2s ease-in-out forwards,
-    spinY 2s ease-out forwards;
-    -webkit-animation: 8s ease-in-out infinite both alternate,
-    movement_two 20s ease-in-out infinite both,
-    blobOneColor 2s ease-in-out forwards,
-    spinY 2s ease-out forwards;
-    -moz-animation: 8s ease-in-out infinite both alternate,
-    movement_two 20s ease-in-out infinite both,
-    blobOneColor 2s ease-in-out forwards,
-    spinY 2s ease-out forwards;
-    -o-animation:8s ease-in-out infinite both alternate,
-    movement_two 20s ease-in-out infinite both,
-    blobOneColor 2s ease-in-out forwards,
-    spinY 2s ease-out forwards;
-    -ms-animation:8s ease-in-out infinite both alternate,
-    movement_two 20s ease-in-out infinite both,
-    blobOneColor 2s ease-in-out forwards,
-    spinY 2s ease-out forwards;
+    blobOneColor 2s ease-in-out forwards;
+    // spinY 2s ease-out forwards;
+    // -webkit-animation: 8s ease-in-out infinite both alternate,
+    // movement_two 20s ease-in-out infinite both,
+    // blobOneColor 2s ease-in-out forwards,
+    // spinY 2s ease-out forwards;
+    // -moz-animation: 8s ease-in-out infinite both alternate,
+    // movement_two 20s ease-in-out infinite both,
+    // blobOneColor 2s ease-in-out forwards,
+    // spinY 2s ease-out forwards;
+    // -o-animation:8s ease-in-out infinite both alternate,
+    // movement_two 20s ease-in-out infinite both,
+    // blobOneColor 2s ease-in-out forwards,
+    // spinY 2s ease-out forwards;
+    // -ms-animation:8s ease-in-out infinite both alternate,
+    // movement_two 20s ease-in-out infinite both,
+    // blobOneColor 2s ease-in-out forwards,
+    // spinY 2s ease-out forwards;
 }
 
 .shape-blob.two {
@@ -337,24 +337,24 @@ html {
   transform: rotate(-180deg);
   animation: transform 10s ease-in-out infinite both alternate,
     movement_two 10s ease-in-out infinite both,
-    blobTwoColor 2s ease-in-out forwards,
-    spinY 2.5s ease-out forwards;
-    -webkit-animation:transform 10s ease-in-out infinite both alternate,
-    movement_two 10s ease-in-out infinite both,
-    blobTwoColor 2s ease-in-out forwards,
-    spinY 2.5s ease-out forwards;
-  -moz-animation: transform10s ease-in-out infinite both alternate,
-  movement_two 10s ease-in-out infinite both,
-  blobTwoColor 2s ease-in-out forwards,
-  spinY 2.5s ease-out forwards;
-  -o-animation:transform 10s ease-in-out infinite both alternate,
-  movement_two 10s ease-in-out infinite both,
-  blobTwoColor 2s ease-in-out forwards,
-  spinY 2.5s ease-out forwards;
-  -ms-animation: transform 10s ease-in-out infinite both alternate,
-  movement_two 10s ease-in-out infinite both,
-  blobTwoColor 2s ease-in-out forwards,
-  spinY 2.5s ease-out forwards;
+    blobTwoColor 2s ease-in-out forwards;
+  //   spinY 2.5s ease-out forwards;
+  //   -webkit-animation:transform 10s ease-in-out infinite both alternate,
+  //   movement_two 10s ease-in-out infinite both,
+  //   blobTwoColor 2s ease-in-out forwards,
+  //   spinY 2.5s ease-out forwards;
+  // -moz-animation: transform10s ease-in-out infinite both alternate,
+  // movement_two 10s ease-in-out infinite both,
+  // blobTwoColor 2s ease-in-out forwards,
+  // spinY 2.5s ease-out forwards;
+  // -o-animation:transform 10s ease-in-out infinite both alternate,
+  // movement_two 10s ease-in-out infinite both,
+  // blobTwoColor 2s ease-in-out forwards,
+  // spinY 2.5s ease-out forwards;
+  // -ms-animation: transform 10s ease-in-out infinite both alternate,
+  // movement_two 10s ease-in-out infinite both,
+  // blobTwoColor 2s ease-in-out forwards,
+  // spinY 2.5s ease-out forwards;
 }
 
 .shape-blob.three {
@@ -365,24 +365,24 @@ html {
   transform: rotate(-180deg);
   animation: transform 7s ease-in-out infinite both alternate,
     movement_two 23s ease-in-out infinite both,
-    blobThreeColor 2s ease-in-out forwards,
-    spinY 2s ease-out forwards;
-    -webkit-animation:transform 7s ease-in-out infinite both alternate,
-    movement_two 23s ease-in-out infinite both,
-    blobThreeColor 2s ease-in-out forwards,
-    spinY 2s ease-out forwards;
-  -moz-animation:transform 7s ease-in-out infinite both alternate,
-  movement_two 23s ease-in-out infinite both,
-  blobThreeColor 2s ease-in-out forwards,
-  spinY 2s ease-out forwards;
-  -o-animation:transform 7s ease-in-out infinite both alternate,
-  movement_two 23s ease-in-out infinite both,
-  blobThreeColor 2s ease-in-out forwards,
-  spinY 2s ease-out forwards;
-  -ms-animation:transform 7s ease-in-out infinite both alternate,
-  movement_two 23s ease-in-out infinite both,
-  blobThreeColor 2s ease-in-out forwards,
-  spinY 2s ease-out forwards;
+    blobThreeColor 2s ease-in-out forwards;
+  //   spinY 2s ease-out forwards;
+  //   -webkit-animation:transform 7s ease-in-out infinite both alternate,
+  //   movement_two 23s ease-in-out infinite both,
+  //   blobThreeColor 2s ease-in-out forwards,
+  //   spinY 2s ease-out forwards;
+  // -moz-animation:transform 7s ease-in-out infinite both alternate,
+  // movement_two 23s ease-in-out infinite both,
+  // blobThreeColor 2s ease-in-out forwards,
+  // spinY 2s ease-out forwards;
+  // -o-animation:transform 7s ease-in-out infinite both alternate,
+  // movement_two 23s ease-in-out infinite both,
+  // blobThreeColor 2s ease-in-out forwards,
+  // spinY 2s ease-out forwards;
+  // -ms-animation:transform 7s ease-in-out infinite both alternate,
+  // movement_two 23s ease-in-out infinite both,
+  // blobThreeColor 2s ease-in-out forwards,
+  // spinY 2s ease-out forwards;
 }
 
 .shape-blob.four {
@@ -393,52 +393,52 @@ html {
   transform: rotate(-180deg);
   animation: transform 17s ease-in-out infinite both alternate,
     movement_two 13s ease-in-out infinite both,
-    blobFourColor 2s ease-in-out forwards,
-    spinY 2s ease-out forwards;
-   -webkit-animation: transform 17s ease-in-out infinite both alternate,
-   movement_two 13s ease-in-out infinite both,
-   blobFourColor 2s ease-in-out forwards,
-   spinY 2s ease-out forwards;
-  -moz-animation: transform 17s ease-in-out infinite both alternate,
-  movement_two 13s ease-in-out infinite both,
-  blobFourColor 2s ease-in-out forwards,
-  spinY 2s ease-out forwards;
-  -o-animation: transform 17s ease-in-out infinite both alternate,
-  movement_two 13s ease-in-out infinite both,
-  blobFourColor 2s ease-in-out forwards,
-  spinY 2s ease-out forwards;
-  -ms-animation: transform 17s ease-in-out infinite both alternate,
-  movement_two 13s ease-in-out infinite both,
-  blobFourColor 2s ease-in-out forwards,
-  spinY 2s ease-out forwards;
+    blobFourColor 2s ease-in-out forwards;
+  //   spinY 2s ease-out forwards;
+  //  -webkit-animation: transform 17s ease-in-out infinite both alternate,
+  //  movement_two 13s ease-in-out infinite both,
+  //  blobFourColor 2s ease-in-out forwards,
+  //  spinY 2s ease-out forwards;
+  // -moz-animation: transform 17s ease-in-out infinite both alternate,
+  // movement_two 13s ease-in-out infinite both,
+  // blobFourColor 2s ease-in-out forwards,
+  // spinY 2s ease-out forwards;
+  // -o-animation: transform 17s ease-in-out infinite both alternate,
+  // movement_two 13s ease-in-out infinite both,
+  // blobFourColor 2s ease-in-out forwards,
+  // spinY 2s ease-out forwards;
+  // -ms-animation: transform 17s ease-in-out infinite both alternate,
+  // movement_two 13s ease-in-out infinite both,
+  // blobFourColor 2s ease-in-out forwards,
+  // spinY 2s ease-out forwards;
 }
 
 .shape-blob.five {
   height: 300px;
   width: 180px;
-  left: 55%;
+  left: 70%;
   top: 40%;
   transform: rotate(-180deg);
   animation: transform 12s ease-in-out infinite both alternate,
     movement_two 18s ease-in-out infinite both,
-    blobFiveColor 2s ease-in-out forwards,
-    spinY 3s ease-out forwards;
-    -webkit-animation: transform 12s ease-in-out infinite both alternate,
-    movement_two 18s ease-in-out infinite both,
-    blobFiveColor 2s ease-in-out forwards,
-    spinY 3s ease-out forwards;
-  -moz-animation:transform 12s ease-in-out infinite both alternate,
-  movement_two 18s ease-in-out infinite both,
-  blobFiveColor 2s ease-in-out forwards,
-  spinY 3s ease-out forwards;
-  -o-animation:transform 12s ease-in-out infinite both alternate,
-  movement_two 18s ease-in-out infinite both,
-  blobFiveColor 2s ease-in-out forwards,
-  spinY 3s ease-out forwards;
-  -ms-animation: transform 12s ease-in-out infinite both alternate,
-  movement_two 18s ease-in-out infinite both,
-  blobFiveColor 2s ease-in-out forwards,
-  spinY 3s ease-out forwards;
+    blobFiveColor 2s ease-in-out forwards;
+  //   spinY 3s ease-out forwards;
+  //   -webkit-animation: transform 12s ease-in-out infinite both alternate,
+  //   movement_two 18s ease-in-out infinite both,
+  //   blobFiveColor 2s ease-in-out forwards,
+  //   spinY 3s ease-out forwards;
+  // -moz-animation:transform 12s ease-in-out infinite both alternate,
+  // movement_two 18s ease-in-out infinite both,
+  // blobFiveColor 2s ease-in-out forwards,
+  // spinY 3s ease-out forwards;
+  // -o-animation:transform 12s ease-in-out infinite both alternate,
+  // movement_two 18s ease-in-out infinite both,
+  // blobFiveColor 2s ease-in-out forwards,
+  // spinY 3s ease-out forwards;
+  // -ms-animation: transform 12s ease-in-out infinite both alternate,
+  // movement_two 18s ease-in-out infinite both,
+  // blobFiveColor 2s ease-in-out forwards,
+  // spinY 3s ease-out forwards;
 }
 @keyframes spinY {
   from {
@@ -458,24 +458,24 @@ html {
   transform: rotate(-180deg);
   animation: transform 5s ease-in-out infinite both alternate,
     movement_two 5s ease-in-out infinite both,
-    blobSixColor 2s ease-in-out forwards,
-    spinY 2s ease-out forwards;
-    -webkit-animation: transform 5s ease-in-out infinite both alternate,
-    movement_two 5s ease-in-out infinite both,
-    blobSixColor 2s ease-in-out forwards,
-    spinY 2s ease-out forwards;
-  -moz-animation: transform 5s ease-in-out infinite both alternate,
-  movement_two 5s ease-in-out infinite both,
-  blobSixColor 2s ease-in-out forwards,
-  spinY 2s ease-out forwards;
-  -o-animation:transform 5s ease-in-out infinite both alternate,
-  movement_two 5s ease-in-out infinite both,
-  blobSixColor 2s ease-in-out forwards,
-  spinY 2s ease-out forwards;
-  -ms-animation:transform 5s ease-in-out infinite both alternate,
-  movement_two 5s ease-in-out infinite both,
-  blobSixColor 2s ease-in-out forwards,
-  spinY 2s ease-out forwards;
+    blobSixColor 2s ease-in-out forwards;
+  //   spinY 2s ease-out forwards;
+  //   -webkit-animation: transform 5s ease-in-out infinite both alternate,
+  //   movement_two 5s ease-in-out infinite both,
+  //   blobSixColor 2s ease-in-out forwards,
+  //   spinY 2s ease-out forwards;
+  // -moz-animation: transform 5s ease-in-out infinite both alternate,
+  // movement_two 5s ease-in-out infinite both,
+  // blobSixColor 2s ease-in-out forwards,
+  // spinY 2s ease-out forwards;
+  // -o-animation:transform 5s ease-in-out infinite both alternate,
+  // movement_two 5s ease-in-out infinite both,
+  // blobSixColor 2s ease-in-out forwards,
+  // spinY 2s ease-out forwards;
+  // -ms-animation:transform 5s ease-in-out infinite both alternate,
+  // movement_two 5s ease-in-out infinite both,
+  // blobSixColor 2s ease-in-out forwards,
+  // spinY 2s ease-out forwards;
 }
 
 .shape-blob {
@@ -484,29 +484,29 @@ html {
   border-radius: 40% 50% 30% 40%;
   animation: transform 18s ease-in-out infinite both alternate,
     movement_one 12s ease-in-out infinite both,
-    blobSevenColor 2s ease-in-out forwards,
-    spinY 1s ease-out forwards;
+    blobSevenColor 2s ease-in-out forwards;
+  //   spinY 1s ease-out forwards;
 
-    -webkit-animation:transform 18s ease-in-out infinite both alternate,
-    movement_one 12s ease-in-out infinite both,
-    blobSevenColor 2s ease-in-out forwards,
-    spinY 1s ease-out forwards;
-  -moz-animation: transform 18s ease-in-out infinite both alternate,
-  movement_one 12s ease-in-out infinite both,
-  blobSevenColor 2s ease-in-out forwards,
-  spinY 1s ease-out forwards;
-  -o-animation: transform 18s ease-in-out infinite both alternate,
-  movement_one 12s ease-in-out infinite both,
-  blobSevenColor 2s ease-in-out forwards,
-  spinY 1s ease-out forwards;
-  -ms-animation: transform 18s ease-in-out infinite both alternate,
-  movement_one 12s ease-in-out infinite both,
-  blobSevenColor 2s ease-in-out forwards,
-  spinY 1s ease-out forwards;
+  //   -webkit-animation:transform 18s ease-in-out infinite both alternate,
+  //   movement_one 12s ease-in-out infinite both,
+  //   blobSevenColor 2s ease-in-out forwards,
+  //   spinY 1s ease-out forwards;
+  // -moz-animation: transform 18s ease-in-out infinite both alternate,
+  // movement_one 12s ease-in-out infinite both,
+  // blobSevenColor 2s ease-in-out forwards,
+  // spinY 1s ease-out forwards;`
+  // -o-animation: transform 18s ease-in-out infinite both alternate,
+  // movement_one 12s ease-in-out infinite both,
+  // blobSevenColor 2s ease-in-out forwards,
+  // spinY 1s ease-out forwards;
+  // -ms-animation: transform 18s ease-in-out infinite both alternate,
+  // movement_one 12s ease-in-out infinite both,
+  // blobSevenColor 2s ease-in-out forwards,
+  // spinY 1s ease-out forwards;
 
   opacity: 0.7;
   position: absolute;
-  left: 75%;
+  left: 55%;
   top: 40%;
 }
 
