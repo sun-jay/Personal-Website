@@ -273,13 +273,13 @@ html {
 
 @keyframes blobFiveColor {
   0% {
-    background: var(--init_color_5);
+    background: #87ceeb;
   }
   50% {
     background: #ff73f3;
   } /* Mid-transition color for blob five */
   100% {
-    background: var(--end_color_5);
+    background: #ff0000; 
   }
 }
 
