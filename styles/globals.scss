@@ -272,14 +272,11 @@ html {
 }
 
 @keyframes blobFiveColor {
-  0% {
-    background: #87ceeb;
+  from {
+    background: #87ceeb; /* Starting color */
   }
-  50% {
-    background: #ff73f3;
-  } /* Mid-transition color for blob five */
-  100% {
-    background: #ff0000; 
+  to {
+    background: #ff0000; /* Ending color */
   }
 }
 
