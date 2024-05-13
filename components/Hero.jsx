@@ -54,29 +54,28 @@ const Hero = () => {
         <div className="items-center m-auto flex flex-col md:flex-row w-9/12  ">
           <div
             // style={{ opacity: mounted ? 1 : 0 }}
-            className="transition ease-linear duration-1000 flex-col items-center w-9/12 md:w-4/12 "
+            className="transition ease-linear duration-1000 flex-col items-center justify-center w-9/12 md:w-4/12 "
           >
             {/* <img className=" z-10" src="IMG_8285 2-modified (1).png" /> */}
             {imageLoaded ? (
               <img src={image.src} alt="Your Image" />
             ) : (
               <div
-              className="animate-pulse"
-              style={{
-                width: "100%", // Relative to the parent container's width
-                paddingTop: "100%", // Maintain a 1:1 aspect ratio (width:height)
-                backgroundColor: "#EEDFD2",
-                borderRadius: "50%",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            ></div>
+                className="animate-pulse"
+                style={{
+                  width: "100%", // Relative to the parent container's width
+                  paddingTop: "100%", // Maintain a 1:1 aspect ratio (width:height)
+                  backgroundColor: "#EEDFD2",
+                  borderRadius: "50%",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              ></div>
             )}
-            
 
             {/* <div className = "mt-2 p-1 lg:bg-black lg:rounded-full lg:bg-opacity-50 lg:m-4 lg:border-black"> */}
-            <div className="mt-2 mb-1 lg:bg-black lg:rounded-full lg:bg-opacity-50 lg:m-4 lg:border-black">
+            <div className="mt-2 mb-1 lg:bg-black lg:rounded-full lg:bg-opacity-50 lg:m-4 lg:border-black flex flex-row items-center justify-center">
               <Socials />
               {/* <p className="text-white">{String(isLoaded)}</p> */}
             </div>
@@ -105,12 +104,28 @@ const Hero = () => {
               </div> */}
             </p>
             <div className="md:m-4 ml-2 mr-2  mt-4 mb-4">
-              <p className="max-[380px]:text-sm text-lg md:text-xl text-center text-white	">
-                Hi, I&#39;m Sunny Jayaram. I&#39;m a student in the Bay Area
-                going into Comp Sci. I enjoy playing the piano, coding, lifting,
-                competing at hackathons, basketball, music production, and many
-                other hobbies.
+
+              <p className="max-[380px]:text-sm text-xs pt-1 md:text-xl text-center text-white italic">
+                {/* Full-stack engineer | 7x Hackathon Winner incl. Cal and LA Hacks | Musician  */}
+                <TypeAnimation
+                  sequence={[
+                    // Same substring at the start will only be typed out once, initially
+                    "Full-stack engineer",
+                    1000, // wait 1s before replacing "Mice" with "Hamsters"
+                    "7x Hackathon Winner",
+                    1000,
+                    "Cal and LA Hacks Winner",
+                    1000,
+                    "Musician",
+                    1000,
+                  ]}
+                  wrapper="span"
+                  speed={50}
+                  style={{ fontSize: "2em", display: "inline-block" }}
+                  repeat={Infinity}
+                />
               </p>
+
             </div>
             <div className="md:m-4 ml-2 mr-2  mt-5 mb-4">
               <p className="max-[380px]:text-sm text-lg md:text-xl text-center text-white	">
