@@ -1,11 +1,11 @@
 import React from "react";
-import Zoom from 'react-reveal/Zoom'; // Importing Zoom effect
+// import Zoom from 'react-reveal/Zoom'; // Importing Zoom effect
 
 
 const OpenRx = () => {
   return (
     <div id="proj" className="grid place-items-center w-screen bg-gray-100">
-      <Zoom duration={600} fraction = {0.1}>
+      {/* <Zoom duration={600} fraction = {0.1}> */}
       <div id="cols" className="max-w-[1240px] p-6 md:w-10/12 w-full items-center m-auto flex flex-col md:flex-row  ">
         <div id="text" className="md:hidden md:p-3 md:w-6/12 w-full">
           {/* <p className=" text-center md:text-left md:m-4 mb-4 text-md text-red-600 font-bold ">
@@ -39,7 +39,7 @@ const OpenRx = () => {
           </p>
         </div>
       </div>
-      </Zoom>
+      {/* </Zoom> */}
     </div>
   );
 };

@@ -5,7 +5,7 @@ import Anim2 from "./Anim2";
 import { FaArrowCircleDown } from "react-icons/fa";
 import Project from "./Project";
 import { useState, useEffect } from "react";
-import Zoom from "react-reveal/Zoom"; // Importing Zoom effect
+// import Zoom from "react-reveal/Zoom"; // Importing Zoom effect
 import { TypeAnimation } from "react-type-animation";
 import BG from "./BG";
 

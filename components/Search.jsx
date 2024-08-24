@@ -1,5 +1,5 @@
 import React from "react";
-import Zoom from "react-reveal/Zoom"; // Importing Zoom effect
+// import Zoom from "react-reveal/Zoom"; // Importing Zoom effect
 
 const Project = ({ link, name, desc, color }) => {
   return (
@@ -10,7 +10,7 @@ const Project = ({ link, name, desc, color }) => {
           : "grid place-items-center w-screen bg-white"
       }
     >
-      <Zoom duration={600} fraction={0.1}>
+      {/* <Zoom duration={600} fraction={0.1}> */}
         <div
           id="cols"
           className="max-w-[1240px] p-6 md:w-10/12 w-full items-center m-auto flex flex-col md:flex-row  "
@@ -58,7 +58,7 @@ const Project = ({ link, name, desc, color }) => {
             </p>
           </div>
         </div>
-      </Zoom>
+      {/* </Zoom> */}
     </div>
   );
 };
