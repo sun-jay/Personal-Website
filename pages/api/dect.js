@@ -5,13 +5,11 @@ export default async function handler(req, res) {
     // Extract query parameters from the request
     const { word } = req.query;  // Assuming the query param is named 'word'
 
-    // Base URLs for the dictionary and sentences pages
+    // Base URL for the dictionary page
     const dictionaryBaseUrl = 'https://www.merriam-webster.com/dictionary/';
-    const sentencesBaseUrl = 'https://www.merriam-webster.com/sentences/';
 
-    // Construct the full URLs with the query parameter
+    // Construct the full URL with the query parameter
     const dictionaryUrl = `${dictionaryBaseUrl}${encodeURIComponent(word)}`;
-    const sentencesUrl = `${sentencesBaseUrl}${encodeURIComponent(word)}`;
 
     // Fetch the webpage for the dictionary URL
     const dictionaryResponse = await fetch(dictionaryUrl);
@@ -20,33 +18,23 @@ export default async function handler(req, res) {
     }
     const dictionaryHtml = await dictionaryResponse.text();
 
-    // Fetch the webpage for the sentences URL
-    const sentencesResponse = await fetch(sentencesUrl);
-    if (!sentencesResponse.ok) {
-      throw new Error('Failed to fetch sentences page');
-    }
-    const sentencesHtml = await sentencesResponse.text();
-
-    // Extract the text content from both HTMLs
+    // Extract the text content from the HTML
     const dictionaryText = extractText(dictionaryHtml);
-    const sentencesText = extractText(sentencesHtml);
 
-    // Combine the outputs
+    // Combine the output
     const output = `
       Dictionary Text: ${dictionaryText}
       
-      Sentences Text: ${sentencesText}
-      
       Dictionary URL: ${dictionaryUrl}
-      
-      Sentences URL: ${sentencesUrl}
+
+      For more examples visit https://www.merriam-webster.com/sentences/${word}
     `;
 
-    // Send the combined output back
+    // Send the output back
     res.status(200).send(output);
   } catch (error) {
     console.error('Error fetching page:', error);
-    res.status(500).json({ error: 'Failed to fetch pages' });
+    res.status(500).json({ error: 'Failed to fetch page' });
   }
 }
 
