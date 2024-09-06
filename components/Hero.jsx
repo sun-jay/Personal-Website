@@ -132,7 +132,8 @@ const Hero = () => {
                 This website was coded from scratch using Next.js, React.js,
                 TailWind CSS, and Spline 3D, and serves as a record of my
                 progress in frontend development, while also documenting my
-                other projects and achievements. See more on my{" "}
+                other projects and achievements.
+                 {/* See more on my{" "}
                 <span className="underline">
                   <a
                     target="_blank"
@@ -141,7 +142,7 @@ const Hero = () => {
                   >
                     resume↗
                   </a>
-                </span>
+                </span> */}
               </p>
             </div>
           </div>
